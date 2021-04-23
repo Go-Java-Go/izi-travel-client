@@ -112,8 +112,7 @@ func (c *Client) executeRequest(req internalRequest) error {
 func (c *Client) sendRequest(req *internalRequest, internalError *Error, response *fasthttp.Response) error {
 	var (
 		request *fasthttp.Request
-
-		err error
+		err     error
 	)
 
 	// Setup URL
